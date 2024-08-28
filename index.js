@@ -3,7 +3,7 @@ function encriptar() {
 
     let caracteresEspeciales =/[`!@#$%^&*()_\-+=\[\]{};':"\\|,.<>\/?~ ]/;
 
-    let tildes = /^[a-zA-Z\u00C0-\u017F]+$/;
+    //let tildes = /^[a-zA-Z\u00C0-\u017F]+$/;
 
     //validaciones
 
@@ -14,9 +14,9 @@ function encriptar() {
         return alert("No se admiten Mayúsculas");
     } else if (caracteresEspeciales.test(textoIntroducido)== true){
         return alert("No se admiten caracteres especiales");
-    } else if(tildes.test(textoIntroducido) == true){
+    } /*else if(tildes.test(textoIntroducido.split()) == true){
         return alert("No se admiten palabras con acentos/tildes");
-    } else{
+    } */else{
 
     let encriptarTexto = textoIntroducido
         .replace(/a/g, "ai")    

@@ -104,8 +104,10 @@ button{
     width: 90%;
     font-size: 1rem;
     font-weight: 400;
+    transition: all 1s ease;
 
 }
+
 
 .boton1{
     background-color: var(--azul);
@@ -113,10 +115,23 @@ button{
     border-color: var(--azul);
 }
 
+.boton1:hover {
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 8px 4px 16px var(--azul);
+    transition: all 0.2s ease;
+    border-color: #fff;
+  }
+
 .boton2{
     color: var(--azul);
     border-color: var(--azul);
 }
+
+.boton2:hover {
+    color: var(--azul) !important;
+    box-shadow: 8px 4px 16px var(--azul);
+    transition: all 0.2s ease;
+  }
 
 img{
     height: 50%;
@@ -171,8 +186,8 @@ img{
         font-size: 1rem;
         border: none;                
         border-radius: 24px;
-        background-color: var(--color-primario);
-        color: var(--color-letras-botones);
+        background-color: #fff;
+        color: var(--azul);
         padding: 10px 0px;
         margin-bottom: 88px;
         margin-top: 20px;
@@ -189,10 +204,12 @@ img{
             border: 1px solid var(--azul);
         }
 
-        .contenido_textoresultado_botonCopiar:hover{
-            background-color: #356EA9;
-            box-shadow: 0 0 20px rgba(52, 152, 219, 0.5);
-        }
+    .contenido_textoresultado_botonCopiar:hover{
+        color: var(--azul) !important;
+        box-shadow: 8px 4px 16px var(--azul);
+        transition: all 0.2s ease;
+    }
+        
 
 
 footer{
