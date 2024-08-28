@@ -204,6 +204,7 @@ img{
             border: 1px solid var(--azul);
         }
 
+        /*agregando hover*/
     .contenido_textoresultado_botonCopiar:hover{
         color: var(--azul) !important;
         box-shadow: 8px 4px 16px var(--azul);
