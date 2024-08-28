@@ -3,7 +3,9 @@ function encriptar() {
 
     let caracteresEspeciales =/[`!@#$%^&*()_\-+=\[\]{};':"\\|,.<>\/?~ ]/;
 
-    let tildes = /^[a-zA-Z\u00C0-\u017F]+$/
+    let tildes = /^[a-zA-Z\u00C0-\u017F]+$/;
+
+    //validaciones
 
     if (textoIntroducido === "") {
         alert("Por favor, introduce un texto.");
