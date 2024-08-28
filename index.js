@@ -1,10 +1,22 @@
 function encriptar() {
     let textoIntroducido = document.getElementById("texto").value;
 
+    let caracteresEspeciales =/[`!@#$%^&*()_\-+=\[\]{};':"\\|,.<>\/?~ ]/;
+
+    //let tildes = /^[a-zA-Z\u00C0-\u017F]+$/;
+
+    //validaciones
+
     if (textoIntroducido === "") {
         alert("Por favor, introduce un texto.");
         return;
-    }
+    } else if (textoIntroducido != textoIntroducido.toLowerCase()){
+        return alert("No se admiten Mayúsculas");
+    } else if (caracteresEspeciales.test(textoIntroducido)== true){
+        return alert("No se admiten caracteres especiales");
+    } /*else if(tildes.test(textoIntroducido.split()) == true){
+        return alert("No se admiten palabras con acentos/tildes");
+    } */else{
 
     let encriptarTexto = textoIntroducido
         .replace(/a/g, "ai")    
@@ -22,7 +34,7 @@ function encriptar() {
         mostrarOcultarContenidoInicial();
 
         ajustarAlturaContenedor();
-}
+}}
 
 function desencriptar(){
     let textoIntroducido = document.getElementById("texto").value;
